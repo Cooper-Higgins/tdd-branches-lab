@@ -24,6 +24,10 @@ class HighScoresTest(unittest.TestCase):
          self.assertEqual(expected_value, actual_value)
 
     # Test top three from list of scores
+    def test_top_three_scores(self):
+        expected_value = [10, 5, 4]
+        actual_value = personal_top_three(self.scores)
+        self.assertEqual(expected_value, actual_value)
 
     # Test ordered from highest tp lowest
 
