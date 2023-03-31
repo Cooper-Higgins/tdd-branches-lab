@@ -9,5 +9,5 @@ def get_result(final_score):
         return "Draw"
 
 def get_results(final_scores):
-    final_scores = [get_result[0], get_result[1], get_result[2]]
-    return final_scores
+    results = [get_result(score) for score in final_scores]
+    return results
